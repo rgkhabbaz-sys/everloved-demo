@@ -248,17 +248,16 @@ export default function DemoPage() {
         maxWidth: '800px',
         margin: '0 auto',
       }}>
-        {/* Logo */}
-        <div style={{ marginBottom: '24px' }}>
-          <Image
-            src="/logo.png"
-            alt="everloved"
-            width={200}
-            height={133}
-            style={{ objectFit: 'contain' }}
-            priority
-          />
-        </div>
+        {/* Brand */}
+        <h2 style={{
+          fontSize: '2.8rem',
+          fontWeight: 300,
+          color: '#2D2520',
+          letterSpacing: '0.25em',
+          marginBottom: '8px',
+        }}>
+          MEMENTI
+        </h2>
 
         <h1 style={{
           fontSize: '1.1rem',
@@ -306,39 +305,8 @@ export default function DemoPage() {
         ))}
       </section>
 
-      {/* Footer */}
-      <footer style={{
-        textAlign: 'center',
-        padding: '32px 24px 48px',
-      }}>
-        <div style={{
-          maxWidth: '400px',
-          margin: '0 auto',
-          padding: '24px',
-          borderRadius: '16px',
-          background: 'rgba(255,255,255,0.5)',
-          backdropFilter: 'blur(8px)',
-        }}>
-          <p style={{
-            fontSize: '0.85rem',
-            color: '#8B7355',
-            lineHeight: 1.6,
-            margin: 0,
-          }}>
-            Works on desktop, tablet, and mobile.
-            <br />
-            Tap any game to begin.
-          </p>
-        </div>
-        <p style={{
-          fontSize: '0.75rem',
-          color: '#B0A594',
-          marginTop: '24px',
-          letterSpacing: '0.05em',
-        }}>
-          everloved — a companion for those we cherish
-        </p>
-      </footer>
+      {/* Spacer */}
+      <div style={{ height: '60px' }} />
     </div>
   );
 }
